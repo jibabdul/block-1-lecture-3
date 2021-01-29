@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block 1 Lecture 3</title>
+</head>
+<body>
+    <!--Form fields-->
+    <form>
+        <!-- hidden fields are used to valid that form is from the person you sent the page to -->
+        <input type="hidden" id="form-id" value="qerf423fq43hqjbf384yfui345bv3obv83bv75gbvb"/>
+        <label type="my-text">Enter some text:</label>
+        <input for="text" name="some text" id="my-text"/><br/>
+            Website: <input type="text" name="website"><br/>
+            Computer: <input type="text" name="computer"/><br/>
+
+            <label for="my-password">Password:</label> <!-- use labels -->
+            <input type="password" name="my-password" id="my-password"/><br/>
+
+            <input type="radio" name="gender" id="male" value="m"/>
+            <label for="male">Male</label><br/>
+            <input type="radio" name="gender" id="female" value="f"/>
+            <label for="female">Female</label><br/>
+<hr/>
+            <input type="radio" name="season" value="spring">Spring<br/>
+            <input type="radio" name="season" value="summer">Summer<br/>
+            <input type="radio" name="season" value="fall">Fall<br/>
+            <input type="radio" name="season" value="winter">Winter<br/>
+<hr/>
+            <input type="checkbox" name="season" value="spring">Spring<br/>
+            <input type="checkbox" name="season" value="summer">Summer<br/>
+            <input type="checkbox" name="season" value="fall">Fall<br/>
+            <input type="checkbox" name="season" value="winter">Winter<br/>
+<hr/> 
+            <label for="my-text-area">Enter some text:</label><br/>
+            <textarea name="my-big-text" id="my-text-area">
+Enter your
+text here
+            </textarea>
+            <hr/>
+            <select name="select-food" multiple="multiple">
+                <option value="mex">Mexican</option>
+                <option value="chn">Chinese</option>
+                <option value="vit">Vietnamese</option>
+                <option value="ind">Indian</option>
+            </select><br/>
+            <input type="submit"/> |<!-- Submits "GET /?some+text=abc&website=def&computer=ghi&my-password=jkl&
+                gender=f&season=spring&season=spring&my-big-text=hello+there&select-food=vit HTTP/1.1" 200 - --->
+            <input type="reset"/> 
+            
+    </form>
+</body>
+</html>
